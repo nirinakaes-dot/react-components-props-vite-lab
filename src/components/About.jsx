@@ -1,27 +1,13 @@
 
 
-export default function About (){
+export default function About({ image, about }) {
+  return (
+    <aside>
 
+      <img src={image} alt="blog logo" />
 
-    return(
-        <>
-        <aside>
-            <img
-             src="{image}"
-             alt="blog logo">
-            </img>
+      <p>{about}</p>
 
-            <p>
-                {about}
-            </p>
-
-
-
-
-        </aside>
-        
-        
-        </>
-
-    )
+    </aside>
+  );
 }

@@ -1,18 +1,10 @@
 
+import Article from "./Article";
 
+export default function ArticleList({ posts }) {
+  const articleElements = posts.map((post) => {
+    return <Article key={post.id} title={post.title} date={post.date} preview={post.preview} />;
+  });
 
-export default function ArticleList (){
-
-
-    return(
-        <>
-        <main>
-
-
-            
-        </main>
-        
-        </>
-
-    )
+  return <main>{articleElements}</main>;
 }
